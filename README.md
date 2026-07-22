@@ -8,8 +8,11 @@
 
 # 1. ŁADOWANIE BIBLIOTEK
 library(tidyverse)
+
 library(corrplot)
+
 library(recipes)
+
 library(caret)
 
 # 2. IMPORT I CZYSZCZENIE DANYCH
@@ -53,9 +56,11 @@ corrplot(macierz_matematyczna,
 
 # 5. MACHINE LEARNING: PODZIAŁ DANYCH (70/30)
 set.seed(123)
+
 indeksy <- createDataPartition(hr_clean$Attrition, p = 0.7, list = FALSE)
 
 dane_treningowe <- hr_clean[indeksy, ]
+
 dane_testowe    <- hr_clean[-indeksy, ]
 
 # 6. TRENOWANIE MODELU REGRESJI LOGISTYCZNEJ
@@ -68,8 +73,10 @@ summary(model_hr)
 
 # 7. TESTOWANIE MODELU I MACIERZ BŁĘDU
 prognozy_prawd <- predict(model_hr, newdata = dane_testowe, type = "response")
+
 prognozy_binarne <- ifelse(prognozy_prawd > 0.35, 1, 0)
 
 macierz_bledu <- table(Realne_Odejscia = dane_testowe$Attrition_Numeric, 
                        Prognoza_Modelu = prognozy_binarne)
+
 print(macierz_bledu)
