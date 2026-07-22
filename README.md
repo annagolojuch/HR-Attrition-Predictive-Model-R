@@ -1,10 +1,10 @@
 <img width="680" height="531" alt="Rplot1" src="https://github.com/user-attachments/assets/6474b3e9-71d4-46d7-acba-a3942a4f9d1e" />
 <img width="1920" height="1080" alt="wykres+korelacji" src="https://github.com/user-attachments/assets/4c741584-d376-4584-9b34-01fe461bea1d" />
 
-==============================================================================
+=======================================================================================
 # PROJEKT: Analiza i prognozowanie rotacji pracowników (People Analytics)
 # AUTOR: Ania
-# ============================================================
+# =============================================
 
 # 1. ŁADOWANIE BIBLIOTEK
 library(tidyverse)
