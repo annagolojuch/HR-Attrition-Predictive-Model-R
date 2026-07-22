@@ -4,7 +4,6 @@
 
 =======================================================================================
 # PROJEKT: Analiza i prognozowanie rotacji pracowników (People Analytics)
-# AUTOR: Ania
 # =============================================
 
 # 1. ŁADOWANIE BIBLIOTEK
