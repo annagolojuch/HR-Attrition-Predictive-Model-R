@@ -13,7 +13,6 @@ library(recipes)
 library(caret)
 
 # 2. IMPORT I CZYSZCZENIE DANYCH
-# Pamiętaj o poprawnym formacie ścieżki w Windows (zwykłe ukośniki "/")
 hr_data <- read_csv("C:/Users/Ania/Desktop/Projekty moje/R - Projekt/WA_Fn-UseC_-HR-Employee-Attrition.csv")
 
 hr_clean <- hr_data %>%
