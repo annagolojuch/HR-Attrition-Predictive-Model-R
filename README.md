@@ -2,7 +2,7 @@
 <img width="1314" height="1080" alt="wykres+korelacji" src="https://github.com/user-attachments/assets/0d2c74fa-f7d4-4614-88b0-a20c4fcd58ec" />
 
 
-=======================================================================================
+==========================================================================================
 # PROJEKT: Analiza i prognozowanie rotacji pracowników (People Analytics)
 # =============================================
 
